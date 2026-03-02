@@ -1,4 +1,4 @@
-# Selenium Form Automation Demo
+# Selenium Form Automation Script
 
 A Python project demonstrating web form automation using Selenium WebDriver.  
 The script navigates to a practice form page, fills text inputs, radio buttons, checkboxes, dropdown menus, handles alerts, and submits the form.
