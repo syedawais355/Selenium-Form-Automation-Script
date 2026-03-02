@@ -1,66 +1,79 @@
-This project is a demonstration of web automation using Python and the Selenium library. 
-The script navigates to a practice form webpage and automatically fills in various fields, 
-including text inputs, radio buttons, checkboxes, and dropdown menus, before submitting the form.
+# Selenium Form Automation Demo
 
-Features:
+A Python project demonstrating web form automation using Selenium WebDriver.  
+The script navigates to a practice form page, fills text inputs, radio buttons, checkboxes, dropdown menus, handles alerts, and submits the form.
 
--   Automated Data Entry: Fills out a complete web form with predefined data.
--   Handles Diverse Form Elements: Interacts with a variety of HTML form elements.
--   Alert Handling: Includes a try-except block to manage and accept JavaScript alerts.
--   Modular Code: A reusable `fill` function is used for interacting with web elements.
+## Features
 
-Getting Started:
-Follow these instructions to get a copy of the project up and running on your local machine.
+- Automated filling of a complete web form with predefined data
+- Interaction with various HTML form elements (text fields, radio buttons, checkboxes, select menus)
+- JavaScript alert handling using try-except
+- Reusable helper function for cleaner and more maintainable code
 
-Prerequisites:
+## Prerequisites
 
-You'll need to have the following installed:
-*   Python 3.x
-*   Google Chrome (or another web browser of your choice, but the script is currently set up for Chrome)
-*   The corresponding WebDriver for your browser. For Chrome, you can download it from the [ChromeDriver website](https://chromedriver.chromium.org/downloads).
+- Python 3.8 or higher
+- Google Chrome browser
+- ChromeDriver matching your Chrome version  
+  (download from: https://googlechromelabs.github.io/chrome-for-testing/)
 
-Installation:
+## Installation
 
-1.  Clone the repository:
-    git clone https://github.com/syedawais355/Selenium-Form-Automation-Project.git
-    cd Selenium-Form-Automation-Project
- 
+1. Clone the repository
 
-2.  It's highly recommended to use a virtual environment:
-    python -m venv venv
-    source venv/bin/activate
-    make sure ( On Windows, use venv\Scripts\activate )
-    
+   ```
+   git clone https://github.com/syedawais355/Selenium-Form-Automation-Project.git
+   cd Selenium-Form-Automation-Project
+   ```
 
-3.  Install the necessary packages:
-    pip install -r requirements.txt
-    
+2. Create and activate a virtual environment (recommended)
 
-Usage:
-To run the script, execute the `main.py` file from your terminal:
+   ```
+   # macOS / Linux
+   python -m venv venv
+   source venv/bin/activate
 
+   # Windows (Command Prompt)
+   python -m venv venv
+   venv\Scripts\activate
+
+   # Windows (PowerShell)
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+   ```
+
+3. Install dependencies
+
+   ```
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Run the script:
+
+```
 python main.py
+```
 
-The script will launch a new browser window, perform the automated form filling, and then close the browser after a short delay.
+The script will:
+- Open a Chrome browser window
+- Navigate to the practice form
+- Fill all fields with test data
+- Handle any JavaScript alert
+- Submit the form
+- Wait briefly and close the browser
 
-Output  :
-
-
+## Demo
 
 https://github.com/user-attachments/assets/dc448979-2bb9-473c-bfd3-471689d57a55
 
+## Project Structure
 
-
-Contributing:
-
-
-Contributions are welcome! If you have any suggestions or improvements, feel free to fork the repository and open a pull request.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
-License:
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+Selenium-Form-Automation-Project/
+├── main.py               Main automation script
+├── requirements.txt      Project dependencies
+└── README.md
+```
